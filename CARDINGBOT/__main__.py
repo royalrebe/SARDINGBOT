@@ -8,6 +8,7 @@ import logging
 from telethon import events
 from . import smx
 
+os.system("pip install httpx")
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
