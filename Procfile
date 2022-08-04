@@ -1,1 +1,1 @@
-worker: bash start
+smx: python -m CARDINGBOT
