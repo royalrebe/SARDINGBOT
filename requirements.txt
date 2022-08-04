@@ -11,5 +11,3 @@ telethon
 types
 requests
 random
-
-git+https://github.com/projectdiscovery/httpx
