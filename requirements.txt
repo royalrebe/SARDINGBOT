@@ -4,7 +4,7 @@ bs4
 cryptg
 decouple
 flag
-time
+datetime
 PyYAML
 telethon
 types
