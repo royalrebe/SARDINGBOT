@@ -4,7 +4,6 @@ bs4
 cryptg
 decouple
 flag
-httpx
 python-decouple
 string
 time
@@ -13,3 +12,5 @@ telethon
 types
 requests
 random
+
+git+https://github.com/projectdiscovery/httpx
