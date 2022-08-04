@@ -1,0 +1,52 @@
+{
+      "name": "SMXXX",
+      "description": "SOO JAYO KIDSS",
+      "logo": "https://telegra.ph/file/1f3fed95244cdf15c9c69.png",
+      "keywords": [
+        "BHAG JAAA",
+      ],   
+  "repository": "https://github.com/royalrebe/SARDINGBOT",
+  "website": "https://github.com/royalrebe/SARDINGBOT",
+  "success_url": "https://t.me/DARK_WEB_ARMY",
+  "env": {
+       "API_ID": {
+        "description": "Fill Api ID Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Fill Api hash Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "TOKEN": {
+        "description": "BOTTOKEN",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_APP_NAME": {
+        "description": "APP NAME ",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_API_KEY": {
+        "description": "HEROKU API KEY",
+        "value": "",
+        "required": false
+      },
+      "SUDO_USERS": {
+        "description": "USER ID",
+        "value": "",
+        "required": false
+      },
+      "OWNER_ID": {
+        "description": "ID",
+        "value": "",
+        "required": false
+      },
+       "buildpacks": [
+           {
+               "url": "heroku/python"
+            }
+    ]
+}
