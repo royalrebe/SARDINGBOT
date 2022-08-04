@@ -12,4 +12,4 @@ types
 requests
 random
 
-git+https://github.com/projectdiscovery/httpx/cmd/httpx@latest
+git+https://github.com/projectdiscovery/httpx
