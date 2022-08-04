@@ -4,10 +4,11 @@ bs4
 cryptg
 decouple
 flag
-string
 time
 PyYAML
 telethon
 types
 requests
 random
+
+# string
