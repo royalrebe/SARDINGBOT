@@ -11,17 +11,17 @@
   "env": {
        "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "",
+        "value": "3199293",
         "required": true
       },
       "API_HASH": {
         "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "",
+        "value": "3597fa62600da3db380d8532d6c14d38",
         "required": true
       },
       "TOKEN": {
         "description": "BOTTOKEN",
-        "value": "",
+        "value": "2137061521:AAHo74C4UmhwutJwOsKyJ8y1HXxmDU3Hbpw",
         "required": true
       },
       "HEROKU_APP_NAME": {
@@ -36,12 +36,12 @@
       },
       "SUDO_USERS": {
         "description": "USER ID",
-        "value": "",
+        "value": "1858407508",
         "required": false
       },
       "OWNER_ID": {
         "description": "ID",
-        "value": "",
+        "value": "1858407508",
         "required": false
         
         }
