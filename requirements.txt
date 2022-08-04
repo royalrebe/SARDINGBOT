@@ -4,7 +4,6 @@ bs4
 cryptg
 decouple
 flag
-python-decouple
 string
 time
 PyYAML
