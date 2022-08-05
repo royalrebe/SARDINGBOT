@@ -1,6 +1,4 @@
 import os
-import sys
-import asyncio
 import yaml
 from telethon import TelegramClient
 import logging
