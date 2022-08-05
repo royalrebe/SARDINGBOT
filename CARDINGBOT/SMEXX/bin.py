@@ -3,8 +3,7 @@
 import requests
 import types
 
-
-from telethon import events
+from telethon import events, types
 from CARDINGBOT import SUDO_USERS, smx
 
 @smx.on(events.NewMessage(pattern="/bin"))
