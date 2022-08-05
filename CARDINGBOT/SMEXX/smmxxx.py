@@ -1,6 +1,3 @@
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon import events
-
 from CARDINGBOT import smx, OWNER_ID
 from telethon import events
 
@@ -13,6 +10,7 @@ async def start(event):
        replied_user = await event.client(GetFullUserRequest(event.sender_id))
        TheRiZoeL = event.chat_id
        ssmmd = "Hello, Chutya ! Nice To Meet You,  An Powerfull Spam Bot."
-            await smx.client.send_file(TheRiZoeL,
+            
+    await smx.client.send_file(TheRiZoeL,
                   PICC,
                   caption=ssmmd)
