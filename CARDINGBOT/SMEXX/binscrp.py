@@ -22,7 +22,6 @@ async def check_incoming_messages(event):
         if m.startswith(tuple(prefixes)) or len(m) < 25 or event.is_private:
             return
         is_cc = False
-        if entities:
         for entity in entities:
             if isinstance(entity, types.MessageEntityBankCard):
                 is_cc = True
