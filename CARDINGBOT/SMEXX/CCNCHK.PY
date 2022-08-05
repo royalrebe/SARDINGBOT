@@ -9,7 +9,7 @@ from telethon import events
 from datetime import datetime
 from CARDINGBOT import SUDO_USERS, smx
 
-@smx.on(events.NewMessage(incoming=True, pattern=r".ccn(?: |$)(.*)"))
+@smx.on(events.NewMessage(pattern="^/ccn"))
 async def st_charge(event):
     if event.sender_id in SUDO_USERS:
         cc = event.message.message[len('.st '):]
