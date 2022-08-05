@@ -1,4 +1,5 @@
 from telethon import Button, custom, events
+from telethon.tl.functions.users import GetFullUserRequest
 
 from CARDINGBOT import SUDO_USERS, smx
 
