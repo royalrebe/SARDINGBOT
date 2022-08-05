@@ -2,7 +2,7 @@ import os
 import sys
 import random
 import asyncio
-
+from decouple import config
 from telethon import TelegramClient
 import logging
 from os import getenv
