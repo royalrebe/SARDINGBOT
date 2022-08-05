@@ -4,7 +4,6 @@ import random
 import asyncio
 
 from telethon import TelegramClient
-from decouple import config
 import logging
 from os import getenv
 
