@@ -17,12 +17,12 @@ async def start(event):
        firstname = replied_user.user.first_name
        ownermsg = f"**Hi Master, Its me {bot_id}, Your Spam Bot !! \n\n Click Below Buttons For help**"
        usermsg = f"**Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Spam Bot.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Below.** \n\n**𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 [𝐑𝐈𝐙𝐎𝐄𝐋 𝐗](https://t.me/RiZoeLX)**"
-       if event.sender_id == OWNER_ID:
+       if smx.sender_id == OWNER_ID:
             await event.client.send_file(TheRiZoeL,
                   PICC,
                   caption=ownermsg)
        else:
-            await event.client.send_file(TheRiZoeL,
+            await smx.client.send_file(TheRiZoeL,
                   PICC,
                   caption=usermsg)
                 
