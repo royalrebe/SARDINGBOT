@@ -1,5 +1,6 @@
 from CARDINGBOT import smx, OWNER_ID
 from telethon import events
+from telethon.tl.functions.users import GetFullUserRequest
 
 PICC = "https://telegra.ph/file/85fd8d6718c5ded6f4aab.jpg"
 
