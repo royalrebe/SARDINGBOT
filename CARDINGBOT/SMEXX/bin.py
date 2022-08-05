@@ -1,9 +1,9 @@
 # BIN CHECKER 
 
 import requests
-import types
+# import types
 
-
+from telethon.tl import types
 from telethon import events
 from CARDINGBOT import SUDO_USERS, smx
 
