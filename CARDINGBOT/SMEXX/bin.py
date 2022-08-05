@@ -9,7 +9,7 @@ from CARDINGBOT import SUDO_USERS, smx
 
 @smx.on(events.NewMessage(incoming=True, pattern=r".bin(?: |$)(.*)"))
 async def binio(message: types.Message):
-    if binio.sender_id in SUDO_USERS:
+    if message: types.Message.sender_id in SUDO_USERS:
         await message.answer_chat_action('typing')
         ID = message.from_user.id
         FIRST = message.from_user.first_name
