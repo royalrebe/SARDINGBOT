@@ -5,7 +5,7 @@ from telethon import events
 from CARDINGBOT import smx
 from CARDINGBOT.CONDOM import http
 
-@smx.on(events.NewMessage(pattern="^/bin"))
+@smx.on(events.NewMessage(pattern="/bin"))
 async def srbin(event):
     BIN = event.message.message[len('/bin '):]
     reply_msg = await event.get_reply_message()
