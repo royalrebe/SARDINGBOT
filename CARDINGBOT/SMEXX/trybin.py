@@ -5,9 +5,9 @@ from telethon import events
 from CARDINGBOT import smx
 
 
-@smx.on(events.NewMessage(pattern=r'\.bin'))
+@smx.on(events.NewMessage(pattern=r'/bin'))
 async def srbin(event):
-    BIN = event.message.message[len('.bin '):]
+    BIN = event.message.message[len('/bin '):]
     reply_msg = await event.get_reply_message()
     if reply_msg:
         BIN = reply_msg.message
