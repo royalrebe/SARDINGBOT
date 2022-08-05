@@ -5,7 +5,7 @@ from telethon import events
 from CARDINGBOT.CONDOM import http
 from CARDINGBOT import SUDO_USERS, smx
 
-@tgbot.on(events.NewMessage(pattern="^/ip"))
+@smx.on(events.NewMessage(pattern="^/ip"))
 async def ip_fruad(event):
   if event.sender_id in SUDO_USERS:
         IP = event.message.message[len('.ip '):]
