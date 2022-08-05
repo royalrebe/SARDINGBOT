@@ -1,35 +1,37 @@
 # BIN CHECKER 
-import re
+
+import requests
+import types
+
 
 from telethon import events
-from CARDINGBOT import smx
-from CARDINGBOT.CONDOM import http
+from CARDINGBOT import SUDO_USERS, smx
 
 @smx.on(events.NewMessage(pattern="/bin"))
-async def srbin(event):
-    BIN = event.message.message[len('/bin '):]
-    reply_msg = await event.get_reply_message()
-    if reply_msg:
-        BIN = reply_msg.message
-    try:
-        _BIN = re.sub(r'[^0-9]', '', BIN)
-        _res = await http.get(f'http://binchk-api.vercel.app/bin={_BIN}')
-        res = _res.json()
-        msg = f'''
+async def binio(message: types.Message):
+    await message.answer_chat_action('typing')
+    ID = message.from_user.id
+    FIRST = message.from_user.first_name
+    BIN = message.text[len('/bin '):]
+    if len(BIN) < 6:
+        return await message.reply(
+                   'Send bin not ass'
+        )
+    r = requests.get(
+           f'http://binchk-api.vercel.app/bin={BIN}'
+).json()
+    INFO = f'''
 BIN➫ <code>{BIN}</code>
-Brand➫ <u>{res["brand"]}</u>
-Type➫ <u>{res["type"]}</u>
-Level➫ <u>{res["level"]}</u>
-Bank➫ <u>{res["bank"]}</u>
-Phone➫ <u>{res["phone"]}</u>
-Code➫ <u>{res["code"]}</u>
-Currency➫ <u>{res["currency"]}</u>
-Country➫ <u>{res["country"]}({res["code"]})[{res["flag"]}]</u>
-Url➫ <u>{res["url"]}</u>
+Brand➫ <u>{r["brand"]}</u>
+Type➫ <u>{r["type"]}</u>
+Level➫ <u>{r["level"]}</u>
+Bank➫ <u>{r["bank"]}</u>
+Phone➫ <u>{r["phone"]}</u>
+Code➫ <u>{r["code"]}</u>
+Currency➫ <u>{r["currency"]}</u>
+Country➫ <u>{r["country"]}({r["code"]})[{r["flag"]}]</u>
+Url➫ <u>{r["url"]}</u>
 SENDER: <a href="SMEXXY BOY"</a>
 '''
-        await event.edit(msg)
-    except:
-        await event.edit('Failed to parse bin data from api')
-
+    await message.reply(INFO)
 
