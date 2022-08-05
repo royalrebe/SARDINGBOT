@@ -12,7 +12,7 @@ async def start(event):
        RizBot = await event.client.get_me()
        replied_user = await event.client(GetFullUserRequest(event.sender_id))
        TheRiZoeL = event.chat_id
-               ssmmd = "Hello, Chutya ! Nice To Meet You,  An Powerfull Spam Bot."
+       ssmmd = "Hello, Chutya ! Nice To Meet You,  An Powerfull Spam Bot."
             await smx.client.send_file(TheRiZoeL,
                   PICC,
                   caption=ssmmd)
