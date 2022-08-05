@@ -32,7 +32,7 @@ Email = f'{First}.{Last}@gmail.com'
 UA = 'Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0'
 
 
-@smx.on(events.NewMessage(incoming=True, pattern=r".ccn(?: |$)(.*)"))
+@smx.on(events.NewMessage(incoming=True, pattern=r".cvv(?: |$)(.*)"))
 async def ch(message: types.Message):
     if ch.sender_id in SUDO_USERS:
         await message.answer_chat_action('typing')
