@@ -12,6 +12,6 @@ async def start(event):
        TheRiZoeL = event.chat_id
        ssmmd = "Hello, Chutya ! Nice To Meet You,  An Powerfull Spam Bot."
             
-    await smx.client.send_file(TheRiZoeL,
+    await smx.send_file(TheRiZoeL,
                   PICC,
                   caption=ssmmd)
