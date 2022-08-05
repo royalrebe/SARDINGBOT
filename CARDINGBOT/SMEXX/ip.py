@@ -1,6 +1,8 @@
 # IP CHEKER PY
 
 from telethon import events
+import telethon.utils
+from telethon.tl import functions
 
 from CARDINGBOT.CONDOM import http
 from CARDINGBOT import SUDO_USERS, smx
