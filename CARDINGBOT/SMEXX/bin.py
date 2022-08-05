@@ -17,17 +17,19 @@ async def srbin(event):
         res = _res.json()
         msg = f'''
 BIN➫ <code>{BIN}</code>
-Brand➫ <u>{res["brand"]}</u>
-Type➫ <u>{res["type"]}</u>
-Level➫ <u>{res["level"]}</u>
-Bank➫ <u>{res["bank"]}</u>
-Phone➫ <u>{res["phone"]}</u>
-Code➫ <u>{res["code"]}</u>
-Currency➫ <u>{res["currency"]}</u>
-Country➫ <u>{res["country"]}({res["code"]})[{res["flag"]}]</u>
-Url➫ <u>{res["url"]}</u>
+Brand➫ <u>{re["brand"]}</u>
+Type➫ <u>{re["type"]}</u>
+Level➫ <u>{re["level"]}</u>
+Bank➫ <u>{re["bank"]}</u>
+Phone➫ <u>{re["phone"]}</u>
+Code➫ <u>{re["code"]}</u>
+Currency➫ <u>{re["currency"]}</u>
+Country➫ <u>{re["country"]}({re["code"]})[{re["flag"]}]</u>
+Url➫ <u>{re["url"]}</u>
 SENDER: <a href="SMEXXY BOY"</a>
 '''
         await event.edit(msg)
     except:
         await event.edit('Failed to parse bin data from api')
+
+
